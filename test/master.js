@@ -10,6 +10,12 @@ var workers = new Workers({
     args: ['development']
 });
 
+workers.on('error', function(err) {
+    console.log(err);
+}).on('uncaughtException', function(err) {
+    console.log(err);
+});
+
 process.on('message', function(msg) {
     if (msg == 'shutdown') {
         workers.exit();
@@ -32,4 +38,4 @@ setInterval(function() {
 setTimeout(function() {
     workers.exit();
     process.exit(0);
-}, 2000);
+}, 20000);

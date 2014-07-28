@@ -1,7 +1,7 @@
 {
   "name": "node-workers",
   "version": "0.0.1",
-  "description": "manage bunch of processes. include create, close, restart, send message",
+  "description": "manage bunch of processes. include create, close, restart, send, broadcast message",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,7 +13,7 @@
   "keywords": [
     "process"
   ],
-  "author": "chideat",
+  "author": "chideat <chinaxiahiafeng@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/chinat/node-workers/issues"
