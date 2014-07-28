@@ -1,7 +1,7 @@
 {
-  "name": "node-workers",
-  "version": "0.0.1",
-  "description": "manage bunch of processes. include create, close, restart, send, broadcast message",
+  "name": "workers",
+  "version": "0.0.2",
+  "description": "Manage bunch of processes.Can create, close, restart processes and send, broadcast messages",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
