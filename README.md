@@ -2,6 +2,20 @@
 
 worker process manager.
 
+### Usage
+> #### Install
+```shell
+npm install node-workers
+```
+> #### in master process
+```js
+var Workers = require('node-workers')('Workers');
+```
+> #### in worker process
+```js
+var logger = require('node-workers')('logger');
+```
+
 ### Functions
 * create/close/auto_restart bunch of processes.
 * send/broadcase messages to child processes.
@@ -12,5 +26,5 @@ worker process manager.
 * the communication between master and worker is by IPC.
 * logging function is also support by IPC.
 
-### LICENSE 
+### LICENSE
 MIT

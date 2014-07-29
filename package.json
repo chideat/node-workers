@@ -1,6 +1,6 @@
 {
   "name": "node-workers",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Manage bunch of processes.Can create, close, restart processes and send, broadcast messages. Can do with multi process log.",
   "main": "index.js",
   "scripts": {
