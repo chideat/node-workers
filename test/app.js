@@ -1,6 +1,8 @@
 
-setTimeout(function() {
-    console.log(process.argv);
+var logger = require('../')('logger');
+
+setInterval(function() {
+    logger.info('hello');
 }, 1000);
 
 process.on('message', function(data) {
