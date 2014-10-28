@@ -8,19 +8,19 @@ Worker process manager.
 * multiprocess logging support.
 
 ### Usage
- #### Install
+#### Install
 ```shell
 npm install node-workers
 ```
- #### master
+#### master
 ```js
 var Workers = require('node-workers')('Workers');
 ```
- #### worker
+#### worker
 ```js
 var logger = require('node-workers')('logger');
 ```
- #### worker send message to master
+#### worker send message to master
 ```js
 process.send(['data', 'i need to be inited']);
 ```
